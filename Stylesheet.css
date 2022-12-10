@@ -1,0 +1,441 @@
+.background
+{
+    background-image: url(thumbnail_IMG_2943.jpg) ;height: 71.3rem;background-position:center;background-repeat:no-repeat;background-size: 150%;text-align: center; opacity: 0.9;
+}  
+#abc{font-size:66px;color:white;position:relative;text-align:center;font-family:'Roboto Condensed',cursive;margin:0}
+#cba{font-size:56px;color:white;position:relative;text-align:center;font-family:'PT Sans',cursive;margin:0;margin-bottom:75px;}
+#pixie{position:absolute;pointer-events:none;top:0;display:inline-block;width:100%;left:0}
+
+.Todo {
+    position: absolute;
+    margin: 0;
+    padding: 24px 40px;
+    padding-top: 16px;
+    border-radius: 16px;
+    width: 60vw;
+    font-family: sans-serif, 'Microsoft JhengHei', '微軟正黑體';
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fefefe;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+  }
+  
+  h1 {
+    color: rgb(46, 80, 100);
+  }
+  
+  .addBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  
+  input {
+    padding: 0 12px;
+    border: 1px solid rgb(113, 156, 165);
+    border-radius: 2px;
+    width: 85%;
+    height: 32px;
+    font-size: 1rem;
+    color: rgb(97, 134, 141);
+    outline: none;
+  }
+  
+  .bttn {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: .8rem;
+    color: white;
+    background: rgb(93, 166, 180);
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+  }
+  butbttnton:hover {
+    background: rgb(113, 156, 165);
+  }
+  
+  .danger {
+    float: right;
+    margin-top: 40px;
+    background: inherit;
+    border: 1px solid rgb(184, 109, 109);
+    color: rgb(184, 109, 109);
+  }
+  
+  .danger:hover {
+    color: white;
+    background: rgb(184, 109, 109);
+  }
+  
+  .danger.show {
+    display: block;
+  }
+  
+  .danger.hide {
+    display: none;
+  }
+  
+  .list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    /* border-bottom: 1px solid rgb(243, 243, 243); */
+    color: rgb(46, 80, 100);
+  }
+  
+  li:last-child {
+    border: 0;
+  }
+  
+  .list a {
+    padding: 4px 8px;
+    border: 1px solid rgb(132, 144, 151);
+    border-radius: 4px;
+    font-size: .8rem;
+    text-decoration: none;
+    color: rgb(116, 131, 139);
+    transition: all .2s;
+  }
+  .list a:hover {
+    color: white;
+    background: rgb(132, 144, 151);
+  }
+
+.button {
+    opacity: 0.8;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.login_signup
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    font-family: 'Franklin Gothic Medium';
+}
+ 
+::-webkit-input-placeholder
+{
+    color: black;
+    font-size: large;
+}
+ 
+.login_signup input
+{
+    border-radius: 31px;
+    background: white;
+    border-color: black;
+    width: 400px;
+    height: 60px;
+    padding-left: 15px;
+    margin-top: 25px;
+    color: black;
+    font-size: large;
+}
+ 
+.todoList
+{
+    padding: 0px;
+}
+ 
+.radio
+{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+ 
+.login_signup h1
+{
+    font-size: 50px;
+    color: black;
+    display: block;
+    text-align: center;
+}
+ 
+.loginInstead
+{
+    display: block;
+    text-align: center;
+    color: grey;
+    padding-top: 15px;
+}
+ 
+.createAccount
+{
+    display: block;
+    text-align: center;
+    color: grey;
+    padding-top: 15px;
+}
+ 
+.logo
+{
+    margin-top: -9px;
+    margin-left: -75px;
+    height: 40px;
+}
+ 
+.or
+{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: black;
+}
+ 
+.loginSocial
+{
+    margin-top: 15px;
+}
+ 
+.loginSocial a:hover
+{
+    color: white;
+}
+ 
+.googleLogin
+{
+    background: #ea4335;
+    display: block;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 15px 50px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+ 
+.facebookLogin
+{
+    background: #3b5998;
+    display: block;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 15px 50px;
+    border-radius: 15px;
+}
+ 
+.googleIcon:before {
+    content: "\f1a0";
+    padding-right: 10px;
+}
+ 
+.facebookIcon:before {
+    content: "\f1a0";
+    padding-right: 10px;
+}
+ 
+.wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    font-family: 'Franklin Gothic Medium';
+}
+ 
+.calendarBox
+{
+    background: white;
+    border-radius: 15px;
+    width: 1200px;
+}
+ 
+.calendar
+{
+    padding: 20px;
+}
+ 
+.calendarBox header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 15px;
+}
+ 
+header .currentDate
+{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+ 
+header .icons span
+{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+}
+ 
+header .icons span:hover
+{
+    background: lightgray;
+}
+ 
+.calendar ul
+{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 0px;
+}
+ 
+.calendar ul li
+{
+    width: calc(100%/7);
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+}
+ 
+.calendar .weeks li
+{
+    font-size: 1.8rem;
+    text-align: center;
+}
+ 
+.calendar .days
+{
+    margin-bottom: 50px;
+}
+ 
+.calendar .days li
+{
+    margin-top: 100px;
+    cursor: pointer;
+    z-index: 1;
+}
+ 
+.calendar .days li::before
+{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 20%;
+}
+ 
+.calendar .days li:hover::before
+{
+    background-color: lightgrey;
+}
+ 
+.days li.inactive
+{
+    color: #aaa;
+}
+ 
+.days li.active
+{
+    color: white;
+}
+ 
+.days li.active::before
+{
+    background: black;
+}
+ 
+.days li.active:hover:before
+{
+    background: black;
+}
+ 
+.currentDate
+{
+    color: black
+}
+ 
+.homepageContainer
+{
+    position: absolute;
+}
+ 
+.buttons
+{
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    width: 400px;
+    height: 300px;
+    padding: 10px 15px;
+    border-width: 10px;
+    border-color: black;
+}
+ 
+.buttons a
+{
+    color: black;
+}

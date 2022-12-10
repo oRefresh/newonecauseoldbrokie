@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="Stylesheet.css">
+        <script src="lib/anime.js"></script>
+        <script src="lib/anime.es.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    </head >
+ 
+    <body>
+       <div class="background">
+        <nav class="navbar navbar-inverse" style="background-color: black; border-radius: 0px;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+              </div>
+              <ul class="nav navbar-nav navbar-master">
+                <li ><a href="HomePage.html"><span class="glyphicon glyphicon-home" style="padding-right: 10px; color: white"  ></span>Home</a></li>
+            </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Calendar.html"><span class="glyphicon glyphicon-calendar" style="padding-right: 10px; color: white"  ></span>Calendar</a></li>
+                <li><a href="ToDoList.html"><span class="glyphicon glyphicon-bookmark" style="padding-right: 10px; color: white"  ></span>Tasks</a></li>
+                <li><a href="LoginPage.html" ><span class="glyphicon glyphicon-log-in" style="padding-right: 10px; color: white"></span>Login</a></li>
+                <li><a href="SignupPage.html"><span class="glyphicon glyphicon-user" style="padding-right: 10px; color: white"></span>Sign Up</a></li>
+              </ul>
+            </div>
+        </nav>
+       
+        <div class="login_signup">
+            <h1>Log In</h1>
+            <hr style="height:2px; border-width:0; color:black; background-color:black">
+            <form action="login.php" method="post"></form>
+                <input style="margin-top: 5px;" type="text" id="usernameIn" placeholder="Username" name="username"><br>
+                <input type="text" id="passwordIn" placeholder="Password" name="password"><br>
+                <!-- <input type="radio" id="rememberMe" class="radio"> -->
+                <a class="createAccount" href="SignupPage.html"><u>Don't have an account? Create one</u></a>
+                <input style="background-color: black; color: white;" type="submit" id="login" value="Login" onclick=""><br>
+            </form>
+            <span class="or"> — or —</span>
+            <div class="loginSocial">
+                <a href="ToDoListPage.html" class="googleLogin"><i class='fab googleIcon'></i>Login With Google</a>
+                <a href="Calendar.html" class="facebookLogin"><span class="facebookIcon"></span>Login With Facebook</a>
+            </div>
+        </div>
+    </div>
+        <script src="lib/anime.min.js"></script>
+        <script>
+            anime({
+                targets: '.logo',
+                translateX: 100
+            });
+        </script>
+    </body>
+   
+</html>

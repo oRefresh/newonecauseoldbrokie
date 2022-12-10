@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <script src="lib/anime.js"></script>
+    <script src="lib/anime.es.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  </head>
+ 
+  <body>
+    <nav class="navbar navbar-inverse" style="background-color: black; border-radius: 0px;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+        <ul class="nav navbar-nav navbar-master">
+          <li ><a href="HomePage.html"><span class="glyphicon glyphicon-home" style="padding-right: 10px; color: white"  ></span>Home</a></li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Calendar.html"><span class="glyphicon glyphicon-calendar" style="padding-right: 10px; color: white"  ></span>Calendar</a></li>
+          <li><a href="ToDoList.html"><span class="glyphicon glyphicon-bookmark" style="padding-right: 10px; color: white"  ></span>Tasks</a></li>
+          <li><a href="LoginPage.html" ><span class="glyphicon glyphicon-log-in" style="padding-right: 10px; color: white"></span>Login</a></li>
+          <li><a href="SignupPage.html"><span class="glyphicon glyphicon-user" style="padding-right: 10px; color: white"></span>Sign Up</a></li>
+        </ul>
+      </div>
+  </nav>
+ 
+    <div class="wrapper">
+        <div class="calendarBox">
+          <header>
+            <p class="currentDate"></p>
+            <div class="icons">
+              <span id="prev">&larr;</span>
+              <span id="next">&rarr;</span>
+            </div>
+          </header>
+        <div class="calendar">
+          <ul class="weeks" style="text-align: center;">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+    </div>
+   
+ 
+    <script src="lib/anime.min.js"></script>
+    <script>
+      anime({
+        targets: '.logo',
+        translateX: 100
+      });
+    </script>
+    <script src="Calendar.js"></script>
+  </body>
+</html>
