@@ -5,6 +5,7 @@ const dueDate = document.getElementsByClassName('todo')[1];
 const addBtn = document.getElementsByClassName('add')[0];
 const delAllBtn = document.getElementsByClassName('danger')[0];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Novr", "Dec"];
+var count = 1;
 
 todo.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
@@ -15,7 +16,7 @@ addBtn.addEventListener('click', addTodo);
 list.addEventListener('click', delTodo)
 delAllBtn.addEventListener('click', delAllTodo);
 
-function countdown(date)
+function countdown(date, i)
 {
   var due = new Date(date).getTime();
   var diff;
@@ -40,7 +41,7 @@ function countdown(date)
       diff = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     }
 
-     document.getElementById("demo").innerHTML = diff;
+     document.getElementById('dueDateElement' + i.toString()).innerHTML = diff;
   }, 1000);
 }
 
@@ -57,8 +58,9 @@ function breakDownDate()
 }
 
 function addTodo() {
-  
-  const newTodo = todo.value.trim() + " Due: " + breakDownDate() + " Countdown: ";
+  count++;
+  date = breakDownDate();
+  const newTodo = todo.value.trim() + " Due: " + date + " Countdown: " + countdown(date, count);
   if (newTodo == '') { return };
   todos.push(newTodo);
   todo.value = '';
@@ -66,6 +68,7 @@ function addTodo() {
 }
 
 function delTodo(e) {
+  count--;
   if (e.target.nodeName !== 'A') { return };
   const dataNum = e.target.dataset.num;
   todos.splice(dataNum, 1);
@@ -74,6 +77,7 @@ function delTodo(e) {
 
 
 function delAllTodo() {
+  count = 1;
   todos.length = 0;
   saveTodos();
 }
@@ -87,7 +91,7 @@ function saveTodos() {
 function updateTodos() {
   let str = '';
   for (let i = 0; i < todos.length; i++) {
-    str += `<li>Task: ${todos[i]}<p id="demo"></p><a href="#" data-num="${i}">Delete</a></li>`
+    str += `<li>Task: ${todos[i]} <p id="dueDateElement${i}"></p><a href="#" data-num="${i}">Delete</a></li>`
   }
   list.innerHTML = str;
   if (todos.length !== 0) {

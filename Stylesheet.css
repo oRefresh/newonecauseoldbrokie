@@ -20,6 +20,11 @@
     background: #fefefe;
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
   }
+
+.dueDateElement
+{
+  color: green;
+}
   
   h1 {
     color: rgb(46, 80, 100);
