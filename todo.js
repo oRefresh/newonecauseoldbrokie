@@ -40,7 +40,7 @@ function countdown(date)
       diff = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     }
 
-    return diff;
+     document.getElementById("demo").innerHTML = diff;
   }, 1000);
 }
 
@@ -87,7 +87,7 @@ function saveTodos() {
 function updateTodos() {
   let str = '';
   for (let i = 0; i < todos.length; i++) {
-    str += `<li>Task: ${todos[i]}<a href="#" data-num="${i}">Delete</a></li>`
+    str += `<li>Task: ${todos[i]}<p id="demo"></p><a href="#" data-num="${i}">Delete</a></li>`
   }
   list.innerHTML = str;
   if (todos.length !== 0) {
