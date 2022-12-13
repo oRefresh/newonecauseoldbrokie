@@ -5,7 +5,9 @@
 #abc{font-size:66px;color:white;position:relative;text-align:center;font-family:'Roboto Condensed',cursive;margin:0}
 #cba{font-size:56px;color:white;position:relative;text-align:center;font-family:'PT Sans',cursive;margin:0;margin-bottom:75px;}
 #pixie{position:absolute;pointer-events:none;top:0;display:inline-block;width:100%;left:0}
-
+body::-webkit-scrollbar{width: 0.25rem;}
+body::-webkit-scrollbar-track{background: black;}
+body::-webkit-scrollbar-thumb{background: pink;}
 .Todo {
     position: absolute;
     margin: 0;
