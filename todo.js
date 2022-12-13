@@ -92,7 +92,7 @@ function addTodo() {
   count++;
   date = breakDownDate();
   countdown(date, count);
-  const newTodo = "Task: " + todo.value.trim() + " Due: " + date + " Countdown: ";
+  const newTodo = "Task: " + todo.value.trim() + " Due: " + date;
   if (newTodo == '') { return };
   todos.push(newTodo);
   todo.value = '';
@@ -100,6 +100,7 @@ function addTodo() {
 }
 
 function delTodo(e) {
+  count--;
   if (e.target.nodeName !== 'A') { return };
   const dataNum = e.target.dataset.num;
   todos.splice(dataNum, 1);
@@ -121,6 +122,7 @@ function saveTodos() {
 
 function updateTodos() {
   let str = '';
+  console.log(count);
   for (let i = 0; i < todos.length; i++) {
     str += `<li>${todos[i]} <p id="dueDateElement${i}" style="margin: 0 0 0; color:green; font-weight:bold;"></p><a href="#" data-num="${i}">Delete</a></li><hr style="height:1px; border-width:0; color:black; background-color:grey; margin-top:5px; margin-bottom:5px;">`
   }
