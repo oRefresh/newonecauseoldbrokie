@@ -70,7 +70,6 @@ function addTodo() {
 }
 
 function delTodo(e) {
-  count--;
   if (e.target.nodeName !== 'A') { return };
   const dataNum = e.target.dataset.num;
   todos.splice(dataNum, 1);
