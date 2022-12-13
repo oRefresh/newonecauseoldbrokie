@@ -29,7 +29,22 @@ function countdown(date, i)
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    diff = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    if(days == 0 && hours == 0 && minutes == 0)
+    {
+      diff = seconds + "s ";
+    }
+    else if(days == 0 && hours == 0)
+    {
+      diff = minutes + "m " + seconds + "s ";
+    }
+    else if(days == 0)
+    {
+      diff = hours + "h " + minutes + "m " + seconds + "s ";
+    }
+    else
+    {
+      diff = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }
 
     if (distance < 0) {
       document.getElementById('dueDateElement' + i.toString()).style.color = "red";
@@ -39,7 +54,22 @@ function countdown(date, i)
       minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      diff = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      if(days == 0 && hours == 0 && minutes == 0)
+      {
+        diff = seconds + "s ";
+      }
+      else if(days == 0 && hours == 0)
+      {
+        diff = minutes + "m " + seconds + "s ";
+      }
+      else if(days == 0)
+      {
+        diff = hours + "h " + minutes + "m " + seconds + "s ";
+      }
+      else
+      {
+        diff = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      }
     }
 
      document.getElementById('dueDateElement' + i.toString()).innerHTML = diff;
