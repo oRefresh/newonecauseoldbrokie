@@ -6,6 +6,7 @@ const addBtn = document.getElementsByClassName('add')[0];
 const delAllBtn = document.getElementsByClassName('danger')[0];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Novr", "Dec"];
 var count = -1;
+var ramdomNumList = [];
 
 todo.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
@@ -89,9 +90,10 @@ function breakDownDate()
 }
 
 function addTodo() {
+  ramdomNumList.push(Math.floor(Math.random() * 10000));
   count++;
   date = breakDownDate();
-  countdown(date, count);
+  countdown(date, ramdomNumList[count]);
   const newTodo = "Task: " + todo.value.trim() + " Due: " + date;
   if (newTodo == '') { return };
   todos.push(newTodo);
@@ -103,6 +105,7 @@ function delTodo(e) {
   count--;
   if (e.target.nodeName !== 'A') { return };
   const dataNum = e.target.dataset.num;
+  console.log("num: " + dataNum);
   todos.splice(dataNum, 1);
   saveTodos();
 }
@@ -124,7 +127,7 @@ function updateTodos() {
   let str = '';
   console.log(count);
   for (let i = 0; i < todos.length; i++) {
-    str += `<li>${todos[i]} <p id="dueDateElement${i}" style="margin: 0 0 0; color:green; font-weight:bold;"></p><a href="#" data-num="${i}">Delete</a></li><hr style="height:1px; border-width:0; color:black; background-color:grey; margin-top:5px; margin-bottom:5px;">`
+    str += `<li>${todos[i]} <p id="dueDateElement${ramdomNumList[i]}" style="margin: 0 0 0; color:green; font-weight:bold;"></p><a href="#" data-num="${i}">Delete</a></li><hr style="height:1px; border-width:0; color:black; background-color:grey; margin-top:5px; margin-bottom:5px;">`
   }
   list.innerHTML = str;
   if (todos.length !== 0) {

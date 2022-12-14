@@ -1,131 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <!-- Webpage Title -->
-    <title>Study hour</title>
-    
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-    <link href="Stylesheet.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-	<!-- Favicon  -->
+<html>
+<title> oRefresh </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="assets/pfp.jpg" />
+<link href=index.css Website.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Noto+Sans|Roboto+Condensed|Roboto+Mono" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="lib/anime.min.js"></script>
 </head>
-<body>
     
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse" style="background-color: black; border-radius: 0px;">
-        <div class="container-fluid">
-          <div class="navbar-header">
-          </div>
-          <ul class="nav navbar-nav navbar-master">
-            <li ><a href="HomePage.html"><span class="glyphicon glyphicon-home" style="padding-right: 10px; color: white"  ></span>Home</a></li>
-        </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="Calendar.html"><span class="glyphicon glyphicon-calendar" style="padding-right: 10px; color: white"  ></span>Calendar</a></li>
-            <li><a href="ToDoList.html"><span class="glyphicon glyphicon-bookmark" style="padding-right: 10px; color: white"  ></span>Tasks</a></li>
-            
-            <li><a href="LoginPage.html" ><span class="glyphicon glyphicon-log-in" style="padding-right: 10px; color: white"></span>Login</a></li>
-            <li><a href="SignupPage.html"><span class="glyphicon glyphicon-user" style="padding-right: 10px; color: white"></span>Sign Up</a></li>
-          </ul>
-        </div>
-    </nav>
-        </nav>
-
-      
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="h1-large">Welcome to Study Hour!</h1>
-                        <a href="ToDoList.html"><button id="home" class="button" ><span>Tasks</span></button></a>
-                   </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-
-    </header> <!-- end of header -->
+<body id="fade-in">
+<div  class="background">
+<nav class="navbar navbar-inverse" style="background-color: black; border-radius: 0px; margin-bottom: 17rem   ;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+      <ul class="nav navbar-nav navbar-master">
+        <li ><a href="HomePage.html"><span class="glyphicon glyphicon-home" style="padding-right: 10px; color: white"  ></span>Home</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Calendar.html"><span class="glyphicon glyphicon-calendar" style="padding-right: 10px; color: white"  ></span>Calendar</a></li>
+        <li><a href="ToDoList.html"><span class="glyphicon glyphicon-bookmark" style="padding-right: 10px; color: white"  ></span>Tasks</a></li>
+        
+        <li><a href="LoginPage.html" ><span class="glyphicon glyphicon-log-in" style="padding-right: 10px; color: white"></span>Login</a></li>
+        <li><a href="SignupPage.html"><span class="glyphicon glyphicon-user" style="padding-right: 10px; color: white"></span>Sign Up</a></li>
+      </ul>
+    </div>
+</nav>
 
 
+<p id="abc">Welcome to Study Hour</p>
 
+<p id="cba">Check Down below</p>
+</div>
+<div id="top-browse" style="text-align: center"><p id="below"></p></div>
+<div class="bounce" style="text-align:center">
+    <img src="assets/arrow.png" id="arrowdown">
+</div>
+</div>
+</div>
 
+<div style="text-align: center">
+<i class="far fa-bookmark" id="favicon-2"></i>
+<p id="portfolio"> What We Do </p>
+</div>
+<div class="bottom-master">
+<div class="bottomblock">
+<img class="bottomblock-img" src="assets/icons8-calendar-50.png">
+<p class="bottomblock-title">Calender</p>
+<p class="bottomblock-desc">A functioning calender where you can store all your future needs. Keep you're self organized with Study hour's Calender.</p>
+</div>
+<div class="bottomblock">
+<img class="bottomblock-img" src="assets/icons8-notepad-80.png">
+<p class="bottomblock-title">To Do List</p>
+<p class="bottomblock-desc"> A functioning to do list where you can plan and organize your tasks and keep yourself on task. Study hour's To do list that you can find anywhere on the global internet.</p>
+</div>
+<div class="bottomblock">
+  <img class="bottomblock-img" src="assets/design.png">
+  <p class="bottomblock-title">Future Plans</p>
+<p class="bottomblock-desc"> We plan on enhancing our website to include future updates, such as: updated calender enahancments, optimized to do list implements, future sql database for login and signup.  </p>
+</div>
+</div>
 
+ 
+<div class="about" style="text-align: center">
+<i class="far fa-user  favicon"></i>
+<p class="aboutmetitle">About Us</p>
+<br>
+<div class="aboutme" style="text-align: center">
+    <p  class="aboutme-section-title">2 Dudes in Topics</p>
+    <p  class="aboutme-section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptate perferendis accusamus nam odit recusandae quisquam porro consectetur dolore dolores rerum possimus aliquam, molestiae laboriosam id. Quasi ab aspernatur sint..</p>
+    <div id="xyz"></div>
+</div>
+</div>
 
-    <!-- Services 1 -->
-    <div id="services" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="thumbnail_IMG_2943.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-5">
-                    <div class="text-container">
-                        <h2>What is the point of study hour?</h2>
-                        <p>It's everyday bro, with the Disney Channel flow
-                            5 mill on YouTube in 6 months, never done before
-                            Passed all the competition man, PewDiePie is next
-                            Man I'm poppin' all these checks, got a brand new Rolex
-                            And I met a Lambo too and I'm coming with the crew
-                            This is Team 10, bitch, who the hell are flippin' you?
-                            And you know I kick them out if they ain't with the crew
-                            Yeah, I'm talking about you, you beggin' for attention
-                            Talking shit on Twitter too but you still hit my phone last night
-                            It was 4:52 and I got the text to prove
-                            And all the recordings too, don't make me tell them the truth
-                            And I just dropped some new merch and it's selling like a god, church
-                            Ohio's where I'm from, we chew 'em like it's gum
-                            We shooting with a gun, the tattoo just for fun
-                            I Usain Bolt and run, catch me at game one
-                            I cannot be outdone, Jake Paul is number one</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of services 1 -->
+<canvas id="pixie" width="638" height="1325" display="inline-block"></canvas>
 
-
-
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="#your-link">whatisthatmelody.co</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed by:  <a href="https://themewagon.com/" target="_blank">Yusif Shawish and Faris Lutfi</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
+<footer>
     
-
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
-    </button>
-    <!-- end of back to top button -->
-    	
-    <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <div class="cr">Copyright 2020 © Monkey.co </div>
+</footer>
+</div>
+</div>
 </body>
 </html>
+
+
+
+<script src="script.js"></script>

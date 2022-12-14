@@ -55,7 +55,7 @@ function draw() {
   var s = 0;
   window.onload = function a() {
     var b = 100,
-      c = "Yusif Shawish";
+      c = "Welcome to Study Hour";
     s < c.length && (document.getElementById("abc").innerHTML += c.charAt(s), s++, setTimeout(a, b))
   };
   var i = 0;
